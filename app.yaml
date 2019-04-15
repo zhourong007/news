@@ -1,0 +1,13 @@
+application: gnet00710
+version: web
+runtime: php55
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: .*
+  script: wenzhou.php
