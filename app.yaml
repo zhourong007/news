@@ -1,6 +1,6 @@
 application: gnet00710
 version: web
-runtime: php7
+runtime: php74
 api_version: 1
 threadsafe: yes
 
