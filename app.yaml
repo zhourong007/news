@@ -1,13 +1,11 @@
-application: gnet00719
-version: 1
-runtime: php74
-api_version: 2
-threadsafe: yes
+runtime: python27
+api_version: 9
+threadsafe: true
 
 handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+- url: /
+  static_files: website/index.html
+  upload: website/index.html
 
-- url: .*
-  script: wenzhou.php
+- url: /
+  static_dir: website
